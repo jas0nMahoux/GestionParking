@@ -10,10 +10,17 @@ public class Main {
 
         Parking parking = new Parking(20, "Sup de Parking");
 
-        Vehicule vehicule1 = new Vehicule("Tesla", "X", "XXX-23-276");
+        // Vehicule vehicule1 = new Vehicule("Tesla", "X", "XXX-23-276");
+        Vehicule vehicule1 = new Vehicule.Builder()
+                .setMatricule("123-123-123")
+                .build();
         System.out.println(vehicule1.toString());
 
-        Vehicule vehicule2 = new Vehicule("Ford", "Fiesta", "XXX-78-374");
+        // Vehicule vehicule2 = new Vehicule("Ford", "Fiesta", "XXX-78-374");
+        Vehicule vehicule2 = new Vehicule.Builder()
+                .setMatricule("123-123-123")
+                .build();
+
         System.out.println(vehicule2.toString());
 
         parking.setVehicule(vehicule1, 1);
